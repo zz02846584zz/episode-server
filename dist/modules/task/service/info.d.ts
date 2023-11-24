@@ -2,16 +2,14 @@ import { BaseService } from '@cool-midway/core';
 import { Repository } from 'typeorm';
 import { TaskInfoEntity } from '../entity/info';
 import { TaskLogEntity } from '../entity/log';
-import { ILogger } from '@midwayjs/logger';
+import { IMidwayApplication } from '@midwayjs/core';
 import { Utils } from '../../../comm/utils';
 import { TaskInfoQueue } from '../queue/task';
-import { IMidwayApplication } from '@midwayjs/core';
 /**
  * 任务
  */
 export declare class TaskInfoService extends BaseService {
     taskInfoEntity: Repository<TaskInfoEntity>;
-    logger: ILogger;
     taskLogEntity: Repository<TaskLogEntity>;
     taskInfoQueue: TaskInfoQueue;
     app: IMidwayApplication;
