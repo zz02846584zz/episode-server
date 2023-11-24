@@ -1,7 +1,7 @@
 import { BaseService } from '@cool-midway/core';
+import { CoolFile } from '@cool-midway/file';
 import { Repository } from 'typeorm';
 import { UserInfoEntity } from '../entity/info';
-import { CoolFile } from '@cool-midway/file';
 /**
  * 用户信息
  */

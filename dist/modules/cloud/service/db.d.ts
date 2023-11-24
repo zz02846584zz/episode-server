@@ -1,16 +1,16 @@
-import { CloudDBEntity } from './../entity/db';
+import { CoolCloudDb } from '@cool-midway/cloud';
 import { BaseService, CoolConfig } from '@cool-midway/core';
 import { Repository } from 'typeorm';
-import { CoolCloudDb } from '@cool-midway/cloud';
+import { CloudDBEntity } from './../entity/db';
 /**
- * 云数据库
+ * 雲數據庫
  */
 export declare class CloudDBService extends BaseService {
     cloudDBEntity: Repository<CloudDBEntity>;
     coolCloudDb: CoolCloudDb;
     coolConfig: CoolConfig;
     /**
-     * 数据
+     * 數據
      * @param id
      * @param method
      * @param params
@@ -30,7 +30,7 @@ export declare class CloudDBService extends BaseService {
         id?: undefined;
     }>;
     /**
-     * 获得数据操作实例
+     * 獲得數據操作實例
      * @param className
      */
     getRepository(className: string): Promise<Repository<any>>;

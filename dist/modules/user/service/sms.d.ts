@@ -1,6 +1,6 @@
 import { BaseService } from '@cool-midway/core';
-import { CacheManager } from '@midwayjs/cache';
 import { CoolSms } from '@cool-midway/sms';
+import { CacheManager } from '@midwayjs/cache';
 /**
  * 描述
  */

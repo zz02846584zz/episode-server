@@ -1,9 +1,9 @@
-import { IMidwayApplication } from '@midwayjs/core';
 import { BaseService } from '@cool-midway/core';
+import { IMidwayApplication } from '@midwayjs/core';
+import { Context } from '@midwayjs/koa';
 import { Repository } from 'typeorm';
 import { BaseSysMenuEntity } from '../../entity/sys/menu';
 import { BaseSysPermsService } from './perms';
-import { Context } from '@midwayjs/koa';
 /**
  * 菜单
  */

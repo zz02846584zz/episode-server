@@ -1,11 +1,11 @@
 import { BaseService } from '@cool-midway/core';
-import { Repository } from 'typeorm';
-import { UserInfoEntity } from '../entity/info';
-import { UserWxService } from './wx';
-import { UserWxEntity } from '../entity/wx';
 import { CoolFile } from '@cool-midway/file';
+import { Repository } from 'typeorm';
 import { BaseSysLoginService } from '../../base/service/sys/login';
+import { UserInfoEntity } from '../entity/info';
+import { UserWxEntity } from '../entity/wx';
 import { UserSmsService } from './sms';
+import { UserWxService } from './wx';
 /**
  * 登录
  */

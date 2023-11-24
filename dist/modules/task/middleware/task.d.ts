@@ -1,5 +1,5 @@
-import { NextFunction, Context } from '@midwayjs/koa';
 import { IMiddleware } from '@midwayjs/core';
+import { Context, NextFunction } from '@midwayjs/koa';
 import { TaskInfoQueue } from '../queue/task';
 /**
  * 任务中间件
