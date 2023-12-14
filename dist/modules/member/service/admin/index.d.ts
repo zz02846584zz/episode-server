@@ -23,6 +23,13 @@ export declare class AdminMemberService extends BaseService {
      * @param param
      */
     update(param: any): Promise<any>;
+    edit(param: any): Promise<{
+        member: import("typeorm").UpdateResult;
+        info: {
+            en: any;
+            'zh-Hant': any;
+        };
+    }>;
     /**
      * 刪除
      * @param param
