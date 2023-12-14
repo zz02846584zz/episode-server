@@ -45,9 +45,14 @@ export declare class AdminMemberService extends BaseService {
      * @param query
      */
     info(id: any): Promise<{
-        id: any;
-        name: string;
-        en: MemberInfoEntity[];
-        tw: MemberInfoEntity[];
+        member: {
+            id: any;
+            name: string;
+            avatar: string;
+        };
+        info: {
+            en: MemberInfoEntity;
+            'zh-Hant': MemberInfoEntity;
+        };
     }>;
 }
